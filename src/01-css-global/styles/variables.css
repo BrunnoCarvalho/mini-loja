@@ -1,0 +1,18 @@
+:root {
+  --bg: #ffffff;
+  --bg-dark: #1a1a1a;
+  --text: #0f172a;
+  --text-dark: #f1f1f1;
+  --muted: #6b7280;
+  --card-bg: #ffffff;
+  --navbar-bg: #ffffff;
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --focus: #f59e0b;
+  --radius: 12px;
+  --shadow: 0 6px 18px rgba(16,24,40,0.06);
+  --shadow-hover: 0 10px 30px rgba(16,24,40,0.12);
+  --shadow-dark: 0 2px 8px rgba(0,0,0,0.5);
+  --spacing: 16px;
+  --gap: 1rem;
+}

@@ -1,0 +1,57 @@
+* {
+     box-sizing: border-box; 
+     margin: 0; 
+     padding: 0; 
+}
+
+main {
+  margin-top: 64px; /* altura exata da navbar */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 200ms, color 200ms;
+}
+
+body.dark {
+  background: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+/* Grid responsivo */
+.grid {
+  display: grid;
+  gap: var(--gap);
+  padding: var(--spacing);
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media(min-width: 481px)
+{
+    .grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(min-width: 769px)
+{
+    .grid
+    {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media(min-width: 1025px)
+{
+    .grid
+    {
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+:focus-visible {
+    outline: 3px solid var(--focus);
+    outline-offset: 3px;
+}

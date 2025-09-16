@@ -1,0 +1,35 @@
+.button {
+  padding: 8px 16px;
+  border-radius: var(--radius);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.solid {
+  background: var(--primary);
+  color: white;
+  border: none;
+}
+
+.outline {
+  background: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+.ghost {
+  background: transparent;
+  color: var(--primary);
+  border: none;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button:active {
+  background: #333;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+}
